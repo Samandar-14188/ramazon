@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Agar Tailwind v4 ishlatsangiz, faqat tepadagi qator yetarli.
+Agar v3 bo'lsa, pastdagilarni ishlating: /
+/ @tailwind base;
+@tailwind components;
+@tailwind utilities;
+*/
+
+:root {
+font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+background-color: #f8fafc;
+}
+
+body {
+margin: 0;
+display: flex;
+place-content: center;
+min-width: 320px;
+min-height: 100vh;
+}
