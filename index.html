@@ -2,23 +2,77 @@
 <html lang="uz">
   <head>
     <meta charset="UTF-8" />
-    <!-- Vite-da public papkasidagi fayllarga to'g'ridan-to'g'ri / bilan murojaat qilinadi -->
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon o'rniga islomiy ramz (Moon) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23064e3b'><path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'></path></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     
-    <!-- To'g'rilangan manifest yo'li -->
+    <!-- Manifest yo'li (agar PWA ishlatayotgan bo'lsangiz) -->
     <link rel="manifest" href="/manifest.json" />
     
-    <!-- Mobil qurilmalar uchun qo'shimcha sozlamalar -->
-    <meta name="theme-color" content="#000000" />
+    <!-- Ramazon brendiga mos ranglar (Emerald Green) -->
+    <meta name="theme-color" content="#064e3b" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link rel="apple-touch-icon" href="/vite.svg" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Ramazon Pro" />
+    
+    <!-- Apple qurilmalari uchun icon -->
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23064e3b'><path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'></path></svg>" />
 
-    <title>AI Chat App</title>
+    <title>Ramazon Pro - Taqvimi va Duolar</title>
+    
+    <style>
+      /* Dastur yuklanishidan oldin ko'rinadigan splash screen */
+      body {
+        margin: 0;
+        background-color: #f8fafc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .loader {
+        text-align: center;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+      .loader-icon {
+        width: 60px;
+        height: 60px;
+        background: #064e3b;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 15px;
+        box-shadow: 0 10px 25px rgba(6, 78, 59, 0.2);
+        animation: pulse 2s infinite ease-in-out;
+      }
+      @keyframes pulse {
+        0% { transform: scale(1); opacity: 1; }
+        50% { transform: scale(1.1); opacity: 0.8; }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      .loader-text {
+        color: #064e3b;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        font-size: 1.2rem;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!-- Ilova yuklanguncha ko'rinadigan qism -->
+      <div class="loader">
+        <div class="loader-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </div>
+        <div class="loader-text">Ramazon Pro</div>
+      </div>
+    </div>
+    
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
