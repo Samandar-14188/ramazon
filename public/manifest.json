@@ -1,27 +1,30 @@
 {
-  "short_name": "AIChat",
-  "name": "AI Chat Messenger",
-  "icons": [
-    {
-      "src": "/vite.svg",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/svg+xml"
-    },
-    {
-      "src": "/vite.svg",
-      "type": "image/svg+xml",
-      "sizes": "192x192",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/vite.svg",
-      "type": "image/svg+xml",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "orientation": "portrait"
+"short_name": "Ramazon",
+"name": "Ramazon Pro - Taqvimi va Duolar",
+"description": "Ramazon oyi taqvimi, duolar va kundalik amallar ilovasi",
+"icons": [
+{
+"src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23064e3b'><path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'></path></svg>",
+"sizes": "64x64 32x32 24x24 16x16",
+"type": "image/svg+xml"
+},
+{
+"src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23064e3b'><path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'></path></svg>",
+"type": "image/svg+xml",
+"sizes": "192x192",
+"purpose": "any maskable"
+},
+{
+"src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23064e3b'><path d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z'></path></svg>",
+"type": "image/svg+xml",
+"sizes": "512x512"
+}
+],
+"start_url": "/",
+"display": "standalone",
+"theme_color": "#064e3b",
+"background_color": "#f8fafc",
+"orientation": "portrait",
+"categories": ["utilities", "lifestyle"],
+"lang": "uz"
 }
